@@ -732,6 +732,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .modal-open:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 
 }
 
@@ -739,10 +740,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon-close:hover,
-.modal-icon-close:focus {
-    fill: #ffffff;
-}
+
 
 .modal-text {
     font-weight: 500;
@@ -763,7 +761,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 38px;
     outline: transparent;
     background-color: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -862,7 +860,7 @@ fill: #4d5ae5;
     align-items: center;
 }
 
-.modal-check-text-span {
+ .modal-check-text-span{
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -876,7 +874,7 @@ fill: #4d5ae5;
     
 }
 
-.modal-check:checked {
+.modal-check:checked + .modal-check-text-span  {
     background-color: #404bbf;;
     border: none;
     fill:#f4f4fd;;
