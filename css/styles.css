@@ -777,7 +777,7 @@ fill: #4d5ae5;
 
 .modal-field {
     margin-bottom: 24px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 .modal-icon {
@@ -827,7 +827,7 @@ fill: #4d5ae5;
     margin: 0 auto;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -838,6 +838,8 @@ fill: #4d5ae5;
     text-align: center;
     color: #fff;
     border-color: #4d5ae5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 
 }
@@ -856,20 +858,23 @@ fill: #4d5ae5;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    margin-right: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   margin-right: 12px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.modal-check:checked + .modal-check-text span {
-    background-color: #4D5AE5;
+.modal-check:checked + .modal-check-text-span {
+    background-color: #404bbf;;
     border: none;
     fill:#f4f4fd;;
 }
 
-
+.modal-check-link {
+    color: #4d5ae5;
+}
 
 /* #endregion backdrop */
