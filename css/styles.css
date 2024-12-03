@@ -792,6 +792,14 @@ fill: #4d5ae5;
     
 }
 
+.modal-field-comment {
+   margin-bottom: 16px; 
+}
+
+.modal-field-user {
+   margin-bottom: 24px; 
+}
+
 .modal-icon {
     
      fill: #2E2F42; 
